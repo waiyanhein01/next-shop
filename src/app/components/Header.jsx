@@ -59,21 +59,31 @@ const Header = () => {
             className="w-[20px] h-[20px]"
           />
 
-          <Image
-            src="/heart.svg"
-            alt="heart"
-            width={20}
-            height={20}
-            className="w-[20px] h-[20px]"
-          />
+          <div className="relative">
+            <Image
+              src="/heart.svg"
+              alt="heart"
+              width={20}
+              height={20}
+              className="w-[20px] h-[20px]"
+            />
+            <span className=" absolute -top-1 -right-1 text-[13px] bg-[#18181B] w-[14px] h-[14px] rounded-full flex justify-center items-center text-[#ffffff]">
+              2
+            </span>
+          </div>
 
-          <Image
-            src="/bag.svg"
-            alt="bag"
-            width={20}
-            height={20}
-            className="w-[20px] h-[20px]"
-          />
+          <div className="relative">
+            <Image
+              src="/bag.svg"
+              alt="bag"
+              width={20}
+              height={20}
+              className="w-[20px] h-[20px]"
+            />
+            <span className=" absolute -top-1 -right-1 text-[13px] bg-[#18181B] w-[14px] h-[14px] rounded-full flex justify-center items-center text-[#ffffff]">
+              2
+            </span>
+          </div>
 
           <Image
             src="/user.svg"
