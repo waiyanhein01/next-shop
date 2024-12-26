@@ -4,7 +4,7 @@ const useCategoryStore = (set) => ({
       id: 1,
       name: "Shirts",
       image:
-        "https://s3-alpha-sig.figma.com/img/f1d7/74d0/6edefcbf44be23fd080d09dffeed831f?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=N6SGweG7vV1CkQ-byqMcH2Zy2H6FhiDNDnrE9GyLLuRYSSP3EEnV5b2on93zCtUuZ5hdpLv1pz3M0UTCinWcpuXvMF8ImTnJ4PS~un6U1~B~93FwMG~rGZjMvJ2ffZFaDyNB2c6Degd2OQuEySXumAfoFgDaKDjiCZl-Bj3SRb8ZZ446OGk7aaUlaiOihHxCElRykqUu3bfzhOd9MA9Uq9Y6hUvschpLAo1BJrULfzFU1kB48sCqY8bixHbSdhTJjgeNYrZ4UaSG4NlK0s4enx-eLOqx4RZc-JgvBNaoIo8RUjRpa2LpV5PGy3ClzlzENCWxwzmhOKNLkDvEvjL1sA__",
+        "https://s3-alpha-sig.figma.com/img/af68/7822/f3a2878ca8a813349067ca998dd29668?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YV-4CeB5Evfo-3zgZTBFgAkiVY3HtjZdFvg1uBUcucWViQGdBuuirXfQm84v6zyWDQocCWpF-YO6ovVLZZ2-VQt84s0ps1oDb1yPO-BfRQ11zeUGa80We0ZmWlj5pgpfP822AkBiIYngYFAcetBvMKygK7GMaJEnuUjoZUoRcnpOTP3MnMiTXqhuokgATcq4sfP0E41DiLT~1H6WQ-QE0px-oWN6Q~AWIR2O7EFNoCKj2QSQPr57Oel40MUkxA030E7CvdiFA8P7jCeDcKg5CKqQmzm4v-rmle7DFTV0IV~Sd7q8XB-5PFwYpwkMBsqtedk8UtSrH0oDSiFk60Bglg__",
     },
     {
       id: 2,
