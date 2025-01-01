@@ -28,7 +28,7 @@ const Page = async () => {
       </div>
 
       {/* CategorySection */}
-      <div className="xl:w-[1280px] lg:w-[1024px] 2xl:w-full mx-auto h-[396px] flex flex-col items-center justify-center mt-[50px] mb-[50px]">
+      <div className="xl:w-[1280px] lg:w-[1024px] 2xl:w-full mx-auto h-auto flex flex-col items-center justify-center mt-[50px] mb-[50px]">
         <div className="xl:w-[1120px] lg:w-[900px]">
           <div className="">
             <h1 className=" w-auto h-[36px] font-bold text-[24px] leading-[36px] text-[#18181B] uppercase">
@@ -40,7 +40,7 @@ const Page = async () => {
             </h3>
           </div>
 
-          <div className="mt-5 flex items-center justify-between gap-3">
+          <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
             {categories.slice(0, 4).map((category) => {
               return (
                 <div
@@ -84,7 +84,7 @@ const Page = async () => {
       </div>
 
       {/* ProductSection */}
-      <div className="xl:w-[1280px] lg:w-[1024px] 2xl:w-full mx-auto h-[662px] flex flex-col items-center justify-center mt-[50px] mb-[50px]">
+      <div className="xl:w-[1280px] lg:w-[1024px] 2xl:w-full mx-auto h-auto flex flex-col items-center justify-center mt-[50px] mb-[50px]">
         <div className="xl:w-[1120px] lg:w-[900px]">
           <div className="">
             <h1 className=" w-auto h-[36px] font-bold text-[24px] leading-[36px] text-[#18181B] uppercase">
@@ -95,7 +95,7 @@ const Page = async () => {
             </h3>
           </div>
 
-          <div className="mt-5 flex items-center justify-between gap-3 ">
+          <div className="mt-5 flex items-center justify-between flex-wrap gap-3 ">
             {data.slice(0, 4).map((item) => {
               return (
                 <div key={item.id} className="">
@@ -115,7 +115,7 @@ const Page = async () => {
                         <h2 className=" w-auto h-[27px] line-clamp-1 font-semibold text-[18px] leading-[27px] text-[#18181B]">
                           {item.title}
                         </h2>
-                        <h2 className=" w-auto h-auto bg-black px-[12px] rounded-md font-normal text-[14px] leading-[27px] text-[#FAFAFA]">
+                        <h2 className=" w-auto h-auto bg-black px-[12px] py-[4px] rounded-md font-normal text-[14px] text-[#FAFAFA]">
                           New
                         </h2>
                       </div>

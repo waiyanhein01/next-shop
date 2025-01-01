@@ -4,7 +4,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="xl:w-[1280px] lg:w-[1024px] 2xl:w-full mx-auto h-[112px] p-[10px] flex items-center justify-center">
+    <header className="xl:w-[1280px] lg:w-[1024px] 2xl:w-full mx-auto h-auto p-[30px] flex items-center justify-center">
       <div className="xl:w-[1120px] lg:w-[900px] h-[32px]  flex items-center justify-between">
         {/* logo */}
         <Image
