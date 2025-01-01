@@ -2,12 +2,13 @@ import Image from "next/image";
 import React from "react";
 import useCategoryStore from "./store/useCategoryStore";
 import Link from "next/link";
+import Container from "@/components/Container";
 
 const Page = async () => {
   const res = await fetch("https://fakestoreapi.com/products");
   const data = await res.json();
 
-  console.log(data);
+  // console.log(data);
   const { categories } = useCategoryStore();
   // console.log(categories);
   return (
@@ -16,15 +17,15 @@ const Page = async () => {
       <div className="relative">
         <Image src="/hero-image.svg" alt="hero" width={1920} height={1080} />
 
-        <div className="w-[750px] h-[196px] absolute bottom-[20px] left-[80px]">
-          <h1 className="w-[665px] h-150px font-extrabold text-[68px] leading-[74.8px] text-[#FAFAFA]">
-            Own your look <br /> Own your moment
-          </h1>
-          <h4 className=" w-[750px] h-[26px] font-medium text-[20px] leading-[26px] text-[#FAFAFA] mt-[20px]">
-            Step into outfits that bring comfort, confidence, and a sense of
-            belonging.
-          </h4>
-        </div>
+        <div className="w-[750px] h-[196px] absolute bottom-[20px] 2xl:left-[280px] xl:left-20 lg:left-14 flex flex-col items-start justify-center">
+            <h1 className="w-[665px] h-150px font-extrabold 2xl:text-[68px] xl:text-[60px] lg:text-[50px] text-[40px] 2xl:leading-[74.8px] xl:leading-[68px] lg:leading-[50px] text-[#FAFAFA]">
+              Own your look <br /> Own your moment
+            </h1>
+            <h4 className=" w-[750px] h-[26px] font-medium text-[20px] leading-[26px] text-[#FAFAFA] mt-[20px]">
+              Step into outfits that bring comfort, confidence, and a sense of
+              belonging.
+            </h4>
+          </div>
       </div>
 
       {/* CategorySection */}
@@ -95,11 +96,11 @@ const Page = async () => {
             </h3>
           </div>
 
-          <div className="mt-5 flex items-center justify-between flex-wrap gap-3 ">
+          <div className="mt-5 flex items-center justify-between flex-wrap gap-3">
             {data.slice(0, 4).map((item) => {
               return (
                 <div key={item.id} className="">
-                  <div className=" w-[265px] h-[290px] relative overflow-hidden bg-[#FAFAFA] shadow-md rounded-[8px] ">
+                  <div className=" w-[265px] h-[290px] relative overflow-hidden bg-[#FAFAFA] border shadow-md rounded-[8px] ">
                     <Image
                       src={item.image}
                       alt="hero"
@@ -107,6 +108,16 @@ const Page = async () => {
                       height={150}
                       className="absolute bottom-5 left-16"
                     />
+
+                    <div className="border border-[#71717A] rounded-full w-[30px] h-[30px] flex items-center justify-center absolute top-3 right-3">
+                      <Image
+                        src="/HeartIcon.svg"
+                        alt="hero"
+                        width={100}
+                        height={100}
+                        className="w-[14px] h-[14px]"
+                      />
+                    </div>
                   </div>
 
                   <div className="w-[265px] h-[130px] mt-5 flex flex-col">

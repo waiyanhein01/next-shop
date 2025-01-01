@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scrollbar-width: none;
+  /* For Firefox */
+  -ms-overflow-style: none;
+  /* For Internet Explorer 10+ */
+}
+
+html::-webkit-scrollbar {
+  display: none;
+  /* For Chrome, Safari, and Opera */
+}
 /* :root {
   --background: #ffffff;
   --foreground: #171717;

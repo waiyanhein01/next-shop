@@ -1,11 +1,15 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 const Header = () => {
+  const activePage = usePathname();
+  // console.log(activePage);
   return (
     <header className="xl:w-[1280px] lg:w-[1024px] 2xl:w-full mx-auto h-auto p-[30px] flex items-center justify-center">
-      <div className="xl:w-[1120px] lg:w-[900px] h-[32px]  flex items-center justify-between">
+      <div className="xl:w-[1120px] lg:w-[900px] h-[32px] flex items-center justify-between">
         {/* logo */}
         <Image
           src="/logo.svg"
@@ -19,31 +23,41 @@ const Header = () => {
         <div className=" w-[441px] h-[17px] flex items-center justify-between ">
           <Link
             href="/"
-            className=" w-auto h-[17px] font-medium text-[14px] leading-[17.07px] text-[#18181B] uppercase"
+            className={`w-auto h-[17px] font-medium text-[14px] leading-[17.07px]  uppercase ${
+              activePage === "/" ? "text-[#18181B] underline underline-offset-2 underline-[#18181B]" : "text-[#8F8F8F]"
+            }`}
           >
             Home
           </Link>
           <Link
             href="/products"
-            className=" w-auto h-[17px] font-medium text-[14px] leading-[17.07px] text-[#18181B] uppercase"
+             className={`w-auto h-[17px] font-medium text-[14px] leading-[17.07px]  uppercase ${
+              activePage === "/products" ? "text-[#18181B] underline underline-offset-2 underline-[#18181B]" : "text-[#8F8F8F]"
+            }`}
           >
             Products
           </Link>
           <Link
             href="/about"
-            className=" w-auto h-[17px] font-medium text-[14px] leading-[17.07px] text-[#18181B] uppercase"
+             className={`w-auto h-[17px] font-medium text-[14px] leading-[17.07px]  uppercase ${
+              activePage === "/about" ? "text-[#18181B] underline underline-offset-2 underline-[#18181B]" : "text-[#8F8F8F]"
+            }`}
           >
             About
           </Link>
           <Link
             href="/faq"
-            className=" w-auto h-[17px] font-medium text-[14px] leading-[17.07px] text-[#18181B] uppercase"
+             className={`w-auto h-[17px] font-medium text-[14px] leading-[17.07px]  uppercase ${
+              activePage === "/faq" ? "text-[#18181B] underline underline-offset-2 underline-[#18181B]" : "text-[#8F8F8F]"
+            }`}
           >
             Faq
           </Link>
           <Link
             href="/contact-us"
-            className=" w-auto h-[17px] font-medium text-[14px] leading-[17.07px] text-[#18181B] uppercase"
+             className={`w-auto h-[17px] font-medium text-[14px] leading-[17.07px]  uppercase ${
+              activePage === "/contact-us" ? "text-[#18181B] underline underline-offset-2 underline-[#18181B]" : "text-[#8F8F8F]"
+            }`}
           >
             Contact
           </Link>
