@@ -17,13 +17,13 @@ const ProductsList = async () => {
         </h3>
       </div>
 
-      <div className="mt-5 flex items-center justify-between flex-wrap gap-5 ">
-        {data.map((item) => {
+      <div className="mt-5 grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-1 gap-5 ">
+        {data.map((product) => {
           return (
-            <div key={item.id} className=" py-3">
+            <Link href={`/products/${product.id}`} key={product.id} className="col-span-1 py-3">
               <div className=" w-[265px] h-[290px] relative overflow-hidden bg-[#FAFAFA] border shadow-md rounded-[8px] ">
                 <Image
-                  src={item.image}
+                  src={product.image}
                   alt="hero"
                   width={150}
                   height={150}
@@ -45,7 +45,7 @@ const ProductsList = async () => {
                 <div className="w-auto h-[58px]">
                   <div className=" w-auto h-[28px] flex items-center gap-3">
                     <h2 className=" w-auto h-[27px] line-clamp-1 font-semibold text-[18px] leading-[27px] text-[#18181B]">
-                      {item.title}
+                      {product.title}
                     </h2>
                     <h2 className=" w-auto h-auto bg-black px-[12px] py-[4px] rounded-md font-normal text-[14px] text-[#FAFAFA]">
                       New
@@ -53,11 +53,11 @@ const ProductsList = async () => {
                   </div>
 
                   <h2 className=" w-auto h-[22px] font-semibold text-[16px] leading-[22.4px] text-[#71717A]">
-                    {item.price} MMK
+                    {product.price} MMK
                   </h2>
                 </div>
 
-                <div className="w-[265px] h-[48px] flex items-center mt-auto justify-center bg-[#18181B] rounded-[8px]">
+                <button className="w-[265px] h-[48px] flex items-center mt-auto justify-center bg-[#18181B] hover:bg-[#434347] duration-200 rounded-[8px]">
                   <div className="w-[108px] h-[24px] flex items-center justify-center gap-2">
                     <Image
                       src="/addToCartBagIcon.svg" // cartIcon
@@ -66,13 +66,13 @@ const ProductsList = async () => {
                       height={24}
                     />
 
-                    <h1 className="w-[80px] h-[24px] font-medium text-[14px] leading-[24px] text-[#FAFAFA]">
+                    <h1 className="w-[80px] h-[24px] font-medium text-[14px] leading-[24px] text-[#FAFAFA] ">
                       Add to cart
                     </h1>
                   </div>
-                </div>
+                </button>
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>

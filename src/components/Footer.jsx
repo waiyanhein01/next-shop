@@ -50,7 +50,7 @@ const Footer = () => {
       </div>
       <div className="w-full h-[56px] bg-[#27272A] flex items-center justify-center mx-auto mt-auto">
         <h1 className="w-[1280px] h-[24px] font-normal text-[14px] leading-[24px] text-[#D4D4D8] text-center">
-          Copy Right © 2024 MMS IT, All Rights Reserved.
+          Copy Right © 2024 Wai Yan Hein, All Rights Reserved.
         </h1>
       </div>
     </footer>

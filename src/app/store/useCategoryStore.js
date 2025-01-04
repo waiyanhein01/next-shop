@@ -2,7 +2,7 @@ const useCategoryStore = (set) => ({
   categories: [
     {
       id: 1,
-      name: "Shirts",
+      name: "Caps",
       image:
         "https://s3-alpha-sig.figma.com/img/af68/7822/f3a2878ca8a813349067ca998dd29668?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YV-4CeB5Evfo-3zgZTBFgAkiVY3HtjZdFvg1uBUcucWViQGdBuuirXfQm84v6zyWDQocCWpF-YO6ovVLZZ2-VQt84s0ps1oDb1yPO-BfRQ11zeUGa80We0ZmWlj5pgpfP822AkBiIYngYFAcetBvMKygK7GMaJEnuUjoZUoRcnpOTP3MnMiTXqhuokgATcq4sfP0E41DiLT~1H6WQ-QE0px-oWN6Q~AWIR2O7EFNoCKj2QSQPr57Oel40MUkxA030E7CvdiFA8P7jCeDcKg5CKqQmzm4v-rmle7DFTV0IV~Sd7q8XB-5PFwYpwkMBsqtedk8UtSrH0oDSiFk60Bglg__",
     },

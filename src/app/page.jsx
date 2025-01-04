@@ -2,7 +2,11 @@ import Image from "next/image";
 import React from "react";
 import useCategoryStore from "./store/useCategoryStore";
 import Link from "next/link";
-import Container from "@/components/Container";
+
+export const metadata = {
+  title: "Next Shop",
+  description: '...',
+}
 
 const Page = async () => {
   const res = await fetch("https://fakestoreapi.com/products");
@@ -17,7 +21,7 @@ const Page = async () => {
       <div className="relative">
         <Image src="/hero-image.svg" alt="hero" width={1920} height={1080} />
 
-        <div className="w-[750px] h-[196px] absolute bottom-[20px] 2xl:left-[280px] xl:left-20 lg:left-14 flex flex-col items-start justify-center">
+        <div className="w-[750px] h-[196px] absolute bottom-[20px] 2xl:left-[294px] xl:left-20 lg:left-14 flex flex-col items-start justify-center">
             <h1 className="w-[665px] h-150px font-extrabold 2xl:text-[68px] xl:text-[60px] lg:text-[50px] text-[40px] 2xl:leading-[74.8px] xl:leading-[68px] lg:leading-[50px] text-[#FAFAFA]">
               Own your look <br /> Own your moment
             </h1>
@@ -41,12 +45,12 @@ const Page = async () => {
             </h3>
           </div>
 
-          <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
+          <div className="mt-5 grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-1 gap-3">
             {categories.slice(0, 4).map((category) => {
               return (
-                <div
+                <Link href="/products"
                   key={category.id}
-                  className="relative w-[265px] bg-[#E8E8E8] overflow-hidden h-[200px] rounded-[8px] "
+                  className="relative w-[265px] col-span-1 bg-[#E8E8E8] overflow-hidden h-[200px] rounded-[8px] "
                 >
                   <Image
                     src={category.image}
@@ -58,7 +62,7 @@ const Page = async () => {
                   <span className="absolute bottom-[20px] left-[20px] w-auto h-[24px] font-medium text-[17px] leading-[24.2px] text-[#3F3F46]">
                     {category.name}
                   </span>
-                </div>
+                </Link>
               );
             })}
           </div>
@@ -69,7 +73,7 @@ const Page = async () => {
             </h1>
 
             <Link
-              href="/products"
+              href="/categories"
               className="w-[440px] h-[48px] text-[#18181B] flex items-center justify-center gap-2 text-center underline underline-offset-2"
             >
               <span className="text-lg font-normal">View all categories</span>
@@ -96,10 +100,10 @@ const Page = async () => {
             </h3>
           </div>
 
-          <div className="mt-5 flex items-center justify-between flex-wrap gap-3">
+          <div className="mt-5 grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-1 gap-3">
             {data.slice(0, 4).map((item) => {
               return (
-                <div key={item.id} className="">
+                <div key={item.id} className="cols-span-1">
                   <div className=" w-[265px] h-[290px] relative overflow-hidden bg-[#FAFAFA] border shadow-md rounded-[8px] ">
                     <Image
                       src={item.image}
@@ -136,7 +140,7 @@ const Page = async () => {
                       </h2>
                     </div>
 
-                    <div className="w-[265px] h-[48px] flex items-center mt-auto justify-center bg-[#18181B] rounded-[8px]">
+                    <button className="w-[265px] h-[48px] flex items-center mt-auto justify-center bg-[#18181B] hover:bg-[#434347] rounded-[8px]">
                       <div className="w-[108px] h-[24px] flex items-center justify-center gap-2">
                         <Image
                           src="/addToCartBagIcon.svg" // cartIcon
@@ -149,7 +153,7 @@ const Page = async () => {
                           Add to cart
                         </h1>
                       </div>
-                    </div>
+                    </button>
                   </div>
                 </div>
               );
