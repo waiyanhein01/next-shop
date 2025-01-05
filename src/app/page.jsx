@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Next Shop",
-  description: '...',
-}
+  description: "...",
+};
 
 const Page = async () => {
   const res = await fetch("https://fakestoreapi.com/products");
@@ -22,14 +22,14 @@ const Page = async () => {
         <Image src="/hero-image.svg" alt="hero" width={1920} height={1080} />
 
         <div className="w-[750px] h-[196px] absolute bottom-[20px] 2xl:left-[294px] xl:left-20 lg:left-14 flex flex-col items-start justify-center">
-            <h1 className="w-[665px] h-150px font-extrabold 2xl:text-[68px] xl:text-[60px] lg:text-[50px] text-[40px] 2xl:leading-[74.8px] xl:leading-[68px] lg:leading-[50px] text-[#FAFAFA]">
-              Own your look <br /> Own your moment
-            </h1>
-            <h4 className=" w-[750px] h-[26px] font-medium text-[20px] leading-[26px] text-[#FAFAFA] mt-[20px]">
-              Step into outfits that bring comfort, confidence, and a sense of
-              belonging.
-            </h4>
-          </div>
+          <h1 className="w-[665px] h-150px font-extrabold 2xl:text-[68px] xl:text-[60px] lg:text-[50px] text-[40px] 2xl:leading-[74.8px] xl:leading-[68px] lg:leading-[50px] text-[#FAFAFA]">
+            Own your look <br /> Own your moment
+          </h1>
+          <h4 className=" w-[750px] h-[26px] font-medium text-[20px] leading-[26px] text-[#FAFAFA] mt-[20px]">
+            Step into outfits that bring comfort, confidence, and a sense of
+            belonging.
+          </h4>
+        </div>
       </div>
 
       {/* CategorySection */}
@@ -48,7 +48,8 @@ const Page = async () => {
           <div className="mt-5 grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-1 gap-3">
             {categories.slice(0, 4).map((category) => {
               return (
-                <Link href="/products"
+                <Link
+                  href="/products"
                   key={category.id}
                   className="relative w-[265px] col-span-1 bg-[#E8E8E8] overflow-hidden h-[200px] rounded-[8px] "
                 >
