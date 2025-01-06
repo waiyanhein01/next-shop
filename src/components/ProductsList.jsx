@@ -43,7 +43,7 @@ const ProductsList = async () => {
 
               <div className="w-[265px] h-[130px] mt-5 flex flex-col">
                 <div className="w-auto h-[58px]">
-                  <div className=" w-auto h-[28px] flex items-center gap-3">
+                  <div className=" w-auto h-[28px] flex items-center justify-between">
                     <h2 className=" w-auto h-[27px] line-clamp-1 font-semibold text-[18px] leading-[27px] text-[#18181B]">
                       {product.title}
                     </h2>
