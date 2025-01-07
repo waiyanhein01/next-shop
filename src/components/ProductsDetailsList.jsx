@@ -141,6 +141,7 @@ const ProductsDetailsList = async ({
             <h3 className=" w-auto h-[20px] font-extralight text-[16px] leading-[19.5px] text-[#71717A] mt-2">
               More styles picked just for you—explore and find your next
               favorite!
+              
             </h3>
           </div>
 
