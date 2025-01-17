@@ -1,6 +1,6 @@
 import BreadCrumb from "@/components/BreadCrumb";
 import Container from "@/components/Container";
-import ProductsDetailsList from "@/components/ProductsDetailsList";
+import ProductsDetailsList from "@/components/feature/products/components/ProductsDetailsList";
 import React from "react";
 
 const Page = async ({ params }) => {
