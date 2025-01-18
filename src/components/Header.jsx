@@ -24,39 +24,49 @@ const Header = () => {
           <Link
             href="/"
             className={`w-auto h-[17px] font-medium text-[14px] leading-[17.07px]  uppercase ${
-              activePage === "/" ? "text-[#18181B] underline underline-offset-2 underline-[#18181B]" : "text-[#8F8F8F]"
+              activePage === "/"
+                ? "text-[#18181B] underline underline-offset-2 underline-[#18181B]"
+                : "text-[#8F8F8F]"
             }`}
           >
             Home
           </Link>
           <Link
             href="/products"
-             className={`w-auto h-[17px] font-medium text-[14px] leading-[17.07px]  uppercase ${
-              activePage === "/products" ? "text-[#18181B] underline underline-offset-2 underline-[#18181B]" : "text-[#8F8F8F]"
+            className={`w-auto h-[17px] font-medium text-[14px] leading-[17.07px]  uppercase ${
+              activePage === "/products"
+                ? "text-[#18181B] underline underline-offset-2 underline-[#18181B]"
+                : "text-[#8F8F8F]"
             }`}
           >
             Products
           </Link>
           <Link
             href="/about"
-             className={`w-auto h-[17px] font-medium text-[14px] leading-[17.07px]  uppercase ${
-              activePage === "/about" ? "text-[#18181B] underline underline-offset-2 underline-[#18181B]" : "text-[#8F8F8F]"
+            className={`w-auto h-[17px] font-medium text-[14px] leading-[17.07px]  uppercase ${
+              activePage === "/about"
+                ? "text-[#18181B] underline underline-offset-2 underline-[#18181B]"
+                : "text-[#8F8F8F]"
             }`}
           >
             About
           </Link>
           <Link
             href="/faq"
-             className={`w-auto h-[17px] font-medium text-[14px] leading-[17.07px]  uppercase ${
-              activePage === "/faq" ? "text-[#18181B] underline underline-offset-2 underline-[#18181B]" : "text-[#8F8F8F]"
+            className={`w-auto h-[17px] font-medium text-[14px] leading-[17.07px]  uppercase ${
+              activePage === "/faq"
+                ? "text-[#18181B] underline underline-offset-2 underline-[#18181B]"
+                : "text-[#8F8F8F]"
             }`}
           >
             Faq
           </Link>
           <Link
             href="/contact-us"
-             className={`w-auto h-[17px] font-medium text-[14px] leading-[17.07px]  uppercase ${
-              activePage === "/contact-us" ? "text-[#18181B] underline underline-offset-2 underline-[#18181B]" : "text-[#8F8F8F]"
+            className={`w-auto h-[17px] font-medium text-[14px] leading-[17.07px]  uppercase ${
+              activePage === "/contact-us"
+                ? "text-[#18181B] underline underline-offset-2 underline-[#18181B]"
+                : "text-[#8F8F8F]"
             }`}
           >
             Contact

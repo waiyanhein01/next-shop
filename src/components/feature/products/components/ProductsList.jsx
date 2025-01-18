@@ -20,7 +20,11 @@ const ProductsList = async () => {
       <div className="mt-5 grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-1 gap-5 ">
         {data.map((product) => {
           return (
-            <Link href={`/products/${product.id}`} key={product.id} className="col-span-1 py-3">
+            <Link
+              href={`/products/${product.id}`}
+              key={product.id}
+              className="col-span-1 py-3"
+            >
               <div className=" w-[265px] h-[290px] relative overflow-hidden bg-[#FAFAFA] border shadow-md rounded-[8px] ">
                 <Image
                   src={product.image}

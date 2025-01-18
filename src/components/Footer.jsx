@@ -15,35 +15,61 @@ const Footer = () => {
             height={32}
             className="justify-items-start w-auto h-[32px] mb-[16px]"
           />
-          <h1 className="w-[148px] h-[24px] font-bold text-[24px] leading-[29.04px] text-[#18181B] uppercase">TrendFlow</h1>
+          <h1 className="w-[148px] h-[24px] font-bold text-[24px] leading-[29.04px] text-[#18181B] uppercase">
+            TrendFlow
+          </h1>
         </div>
 
         {/* group */}
         <div className=" w-[451px] h-[133px] flex justify-between ">
           <div className="">
-            <h1 className="w-auto h-[21px] font-semibold text-[14px] leading-[21px] text-[#353535]">Terms & Conditions</h1>
+            <h1 className="w-auto h-[21px] font-semibold text-[14px] leading-[21px] text-[#353535]">
+              Terms & Conditions
+            </h1>
             <div className="flex flex-col gap-1 mt-[20px]">
-                <h2 className="w-auto h-[21px] font-normal text-[14px] leading-[24px] text-[#8F8F8F]">Returns & Refunds</h2>
-                <h2 className="w-auto h-[21px] font-normal text-[14px] leading-[24px] text-[#8F8F8F]">Privacy Policy</h2>
-                <h2 className="w-auto h-[21px] font-normal text-[14px] leading-[24px] text-[#8F8F8F]">Cookies Policy</h2>
+              <h2 className="w-auto h-[21px] font-normal text-[14px] leading-[24px] text-[#8F8F8F]">
+                Returns & Refunds
+              </h2>
+              <h2 className="w-auto h-[21px] font-normal text-[14px] leading-[24px] text-[#8F8F8F]">
+                Privacy Policy
+              </h2>
+              <h2 className="w-auto h-[21px] font-normal text-[14px] leading-[24px] text-[#8F8F8F]">
+                Cookies Policy
+              </h2>
             </div>
           </div>
 
           <div className="">
-            <h1 className="w-auto h-[21px] font-semibold text-[14px] leading-[21px] text-[#353535]">Store</h1>
+            <h1 className="w-auto h-[21px] font-semibold text-[14px] leading-[21px] text-[#353535]">
+              Store
+            </h1>
             <div className="flex flex-col gap-1 mt-[20px]">
-                <h2 className="w-auto h-[21px] font-normal text-[14px] leading-[24px] text-[#8F8F8F]">About</h2>
-                <h2 className="w-auto h-[21px] font-normal text-[14px] leading-[24px] text-[#8F8F8F]">Contact Us</h2>
-                <h2 className="w-auto h-[21px] font-normal text-[14px] leading-[24px] text-[#8F8F8F]">FAQ</h2>
+              <h2 className="w-auto h-[21px] font-normal text-[14px] leading-[24px] text-[#8F8F8F]">
+                About
+              </h2>
+              <h2 className="w-auto h-[21px] font-normal text-[14px] leading-[24px] text-[#8F8F8F]">
+                Contact Us
+              </h2>
+              <h2 className="w-auto h-[21px] font-normal text-[14px] leading-[24px] text-[#8F8F8F]">
+                FAQ
+              </h2>
             </div>
           </div>
 
           <div className="">
-            <h1 className="w-auto h-[21px] font-semibold text-[14px] leading-[21px] text-[#353535]">SOCIAL</h1>
+            <h1 className="w-auto h-[21px] font-semibold text-[14px] leading-[21px] text-[#353535]">
+              SOCIAL
+            </h1>
             <div className="flex flex-col gap-1 mt-[20px]">
-                <h2 className="w-auto h-[21px] font-normal text-[14px] leading-[24px] text-[#8F8F8F]">Facebook</h2>
-                <h2 className="w-auto h-[21px] font-normal text-[14px] leading-[24px] text-[#8F8F8F]">Instagram</h2>
-                <h2 className="w-auto h-[21px] font-normal text-[14px] leading-[24px] text-[#8F8F8F]">X</h2>
+              <h2 className="w-auto h-[21px] font-normal text-[14px] leading-[24px] text-[#8F8F8F]">
+                Facebook
+              </h2>
+              <h2 className="w-auto h-[21px] font-normal text-[14px] leading-[24px] text-[#8F8F8F]">
+                Instagram
+              </h2>
+              <h2 className="w-auto h-[21px] font-normal text-[14px] leading-[24px] text-[#8F8F8F]">
+                X
+              </h2>
             </div>
           </div>
         </div>
