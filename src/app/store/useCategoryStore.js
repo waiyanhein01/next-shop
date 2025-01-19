@@ -1,5 +1,6 @@
 const useCategoryStore = (set) => ({
   categories: [
+    
     {
       id: 1,
       name: "Caps",
