@@ -8,7 +8,7 @@ const Page = () => {
   return (
     <Container>
       <BreadCrumb currentPage="About" />
-      <About/>
+      <About />
     </Container>
   );
 };

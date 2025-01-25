@@ -14,17 +14,18 @@ const Page = () => {
         <div className="">
           <div className="">
             <h1 className=" w-auto h-[36px] font-bold text-[24px] leading-[36px] text-[#18181B] uppercase">
-            All Categories
+              All Categories
             </h1>
             <h3 className=" w-auto h-[20px] font-extralight text-[16px] leading-[19.5px] text-[#18181B] mt-2">
-            Relaxed fits for everyday wear.
+              Relaxed fits for everyday wear.
             </h3>
           </div>
 
           <div className="mt-5 grid grid-cols-4 gap-3">
             {categories.map((category) => {
               return (
-                <Link href="/products"
+                <Link
+                  href="/products"
                   key={category.id}
                   className="relative w-[265px] col-span-1 bg-[#E8E8E8] overflow-hidden h-[200px] rounded-[8px] "
                 >
