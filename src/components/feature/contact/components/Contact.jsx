@@ -26,6 +26,7 @@ const Contact = () => {
   ]);
   return (
     <div className="">
+      <h1 className="">Hello Testing</h1>
       <div className="">
         <h1 className="w-auto h-[36px] text-[28px] leading-[32px] font-bold text-[#18181B] uppercase">
           Get in Touch with Us
